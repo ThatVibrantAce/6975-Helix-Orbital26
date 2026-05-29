@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { Calendar, CalendarTask } from './Calendar';
 
-export const App = () => {
-  const [text, setText] = useState('');
-  const [tasks, setTasks] = useState<CalendarTask[]>([
-    {
+const now = Date.now();
+const demoTasks: CalendarTask[] = [
+  {
       id: 'demo-1',
       title: 'Demo task',
-      start: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
-      end: new Date(Date.now() + 2 * 60 * 60 * 1000).toISOString(),
-    },
-  ]);
+      start: new Date(now + 60 * 60 * 1000).toISOString(),
+      end: new Date(now + 2 * 60 * 60 * 1000).toISOString(),
+  },
+];
+
+export const App = () => {
+  const [text, setText] = useState('');
+  const [tasks, setTasks] = useState<CalendarTask[]>(demoTasks);
 
   return (
     <div className="min-h-screen p-6">
