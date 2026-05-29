@@ -1,3 +1,9 @@
+function App(): React.JSX.Element {
+  return <div className="p-8 text-2xl">Helix is alive! This is a sanity check.</div>
+}
+export default App
+
+/*
 import Versions from './components/Versions'
 import electronLogo from './assets/electron.svg'
 
@@ -33,3 +39,4 @@ function App(): React.JSX.Element {
 }
 
 export default App
+*/
