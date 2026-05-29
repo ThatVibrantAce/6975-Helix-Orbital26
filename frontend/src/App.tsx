@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const App = () => {
   const [text, setText] = useState('');
@@ -38,5 +38,5 @@ export const App = () => {
         Calendar will go here tomorrow.
       </section>
     </div>
-  )
-}
+  );
+};
