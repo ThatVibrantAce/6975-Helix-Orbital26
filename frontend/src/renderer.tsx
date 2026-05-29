@@ -1,11 +1,11 @@
 import './index.css';
-
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
+import { App } from './App'
 
-createRoot(document.getElementById('app')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-)
+const container = document.getElementById('app');
+if (!container) {
+  throw new Error('Missing #app element in index.html');
+}
+
+const root = createRoot(container);
+root.render(<App />);
