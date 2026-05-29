@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    /* Brand tokens — Ace fills these in during Issue #5b. Placeholders for now. */
+    --color-helix-bg:      oklch(0.20 0.02 250);   /* slate-900-ish */
+    --color-helix-surface: oklch(0.27 0.02 250);   /* slate-800-ish */
+    --color-helix-accent:  oklch(0.65 0.18 220);   /* sky-500-ish */
+    --font-display: "Inter", system-ui, sans-serif;
+}
